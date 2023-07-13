@@ -7,6 +7,7 @@ import { ethers } from "ethers";
 import PrizeNFT from "../components/PrizeNFT";
 import { useState } from "react";
 import CurrentEntries from "../components/CurrentEntries";
+import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   const address = useAddress();
@@ -44,6 +45,7 @@ const Home: NextPage = () => {
   }
 
   return (
+    <div className={styles.container}>
     <Container maxW={"1440px"}>
       <SimpleGrid columns={2} spacing={4} minH={"60vh"}>
         <Flex justifyContent={"center"} alignItems={"center"}>
@@ -117,6 +119,7 @@ const Home: NextPage = () => {
         <CurrentEntries/>
       </Stack>
     </Container>
+    </div>
   );
 };
 

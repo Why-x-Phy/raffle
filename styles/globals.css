@@ -25,6 +25,6 @@ html {
 }
 
 body {
-  color: #e7e8e8;
-  background: var(--black);
+  
+  background: opacity !important;
 }

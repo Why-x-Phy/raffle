@@ -19,13 +19,14 @@ a {
 
 html {
   color-scheme: dark !important;
+  background: opacity !important;
 }
 
 :root {
-  background: red !important;
+  background: opacity !important;
 }
 
 body {
-  background: opacity;
+  background: opacity !important;
 }
 

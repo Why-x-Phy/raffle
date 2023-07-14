@@ -1,6 +1,10 @@
 .container {
   padding: 0 2rem;
-  background: opacity !important;
+  background: red;
+}
+
+body.chakra-ui-light {
+  background: #f213a4 !important;
 }
 
 .main {
@@ -12,6 +16,10 @@
   justify-content: center;
   align-items: center;
 }
+
+.chakra-ui-light {
+  background: #7dd3fc !important;
+  }
 
 .title a {
   color: #f213a4;
@@ -117,4 +125,8 @@
 }
 .logo img {
   filter: invert(1);
+}
+
+.chakra-colors-chakra-body-bg {
+  background: #111;
 }

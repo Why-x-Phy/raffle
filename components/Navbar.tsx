@@ -19,7 +19,7 @@ export default function Navbar() {
 
 
     return (
-        <div className={styles.container}>
+        
         <Container maxW={"1440px"} py={8}>
             <Flex flexDirection={"row"} justifyContent={"space-between"} alignItems={"center"}>
                 <Link href={"/"}>
@@ -35,6 +35,6 @@ export default function Navbar() {
                 </Flex>
             </Flex>
         </Container>
-        </div>
+       
     )
 }

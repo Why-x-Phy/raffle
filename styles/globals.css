@@ -18,15 +18,14 @@ a {
 }
 
 html {
-  color-scheme: dark;
-  background: var(--black);
+  color-scheme: dark !important;
 }
 
 :root {
-  --black: opacity;
+  background: red !important;
 }
 
 body {
-  
-  background: opacity !important;
+  background: opacity;
 }
+

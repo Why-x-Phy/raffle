@@ -6,6 +6,7 @@ import AdminLotteryStatusCard from "../components/LotteryStatus";
 import AdminTicketPriceCard from "../components/TicketPrice";
 import AdminRaffleWinnerCard from "../components/RaffleWinner";
 
+
 export default function Admin() {
     const {
         contract

@@ -22,11 +22,13 @@ html {
   background: opacity !important;
 }
 
-:root {
-  background: opacity !important;
-}
+
 
 body {
   background: opacity !important;
 }
 
+
+.chakra-ui-light {
+  background: opacity;
+}

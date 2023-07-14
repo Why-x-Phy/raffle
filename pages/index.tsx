@@ -7,7 +7,7 @@ import { ethers } from "ethers";
 import PrizeNFT from "../components/PrizeNFT";
 import { useState } from "react";
 import CurrentEntries from "../components/CurrentEntries";
-import styles from "../styles/Home.module.css";
+
 
 
 const Home: NextPage = () => {

@@ -18,7 +18,7 @@ a {
 }
 
 html {
-  color-scheme: dark !important;
+  
   background: opacity !important;
 }
 
@@ -30,5 +30,8 @@ body {
 
 
 .chakra-ui-light {
-  background: opacity;
+  background: opacity !important;
+  background-color: opacity !important;
 }
+
+

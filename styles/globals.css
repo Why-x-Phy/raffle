@@ -19,27 +19,19 @@ a {
 
 html {
   
-  background: opacity !important;
+  background-color: transparent !important;
+  background: transparent !important;
 }
 
 
 
 body {
-  background-color: transparent;
+  background-color: transparent !important;
+  background: transparent !important;
 }
 
 
 .chakra-ui-light {
-  background: opacity !important;
-  background-color: opacity !important;
-}
-
-.css-1c74hb0 {
-  background: opacity !important;
-  background-color: opacity !important;
-}
-
-.css-16dnvck {
-  background: opacity !important;
-  background-color: opacity !important;
+  background-color: transparent !important;
+  background: transparent !important;
 }

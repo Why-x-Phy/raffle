@@ -51,6 +51,15 @@ img {
 margin-left: 100px;
 }
 
+.css-1309xma {
+  top: 200px !important;
+ }
+
+ .css-1un3lp3 {
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FFFFAC 1%, #8f7b55 1%, #FFFFAC 10%, #8A6E2F 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%) !important;
+ }
+
 
 @media only screen and (max-width: 800px) {
 
@@ -124,4 +133,9 @@ margin-left: 100px;
   .css-1fii1tk {
     margin-top: 10px !important;
   }
+
+  .css-1309xma {
+    top: 200px !important;
+   }
+
 }

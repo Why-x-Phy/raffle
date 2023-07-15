@@ -24,7 +24,6 @@ html {
 }
 
 
-
 body {
   background-color: transparent !important;
   background: transparent !important;
@@ -34,4 +33,16 @@ body {
 .chakra-ui-light {
   background-color: transparent !important;
   background: transparent !important;
+}
+
+.css-2jpnd6 {
+  background-color: rgba(166, 166, 167, 0.8) !important;
+  background: rgba(227, 229, 230, 0.5) !important;
+  border: 1px solid rgba(46, 44, 44, 0.4) !important;
+  box-shadow: 0 0 18px 0 #82919b !important;
+  border-radius: 16px !important;
+}
+
+img {
+  border-radius: 16px !important;
 }

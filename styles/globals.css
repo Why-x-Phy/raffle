@@ -169,14 +169,21 @@ margin-left: 100px;
     max-width: 100% !important;
     display: flex !important;
     flex-direction: column !important;
-    flex-wrap: wrap !important;
     align-items: center !important;
     justify-content: center !important;
   }
 
+  .css-133qcag{
+
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-right: 0% !important;
+  }
+
   .css-1fii1tk {
     margin-top: 15px !important;
-    margin-left: 10px !important;
+
   }
 
   .css-1309xma {

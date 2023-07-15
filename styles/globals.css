@@ -50,3 +50,34 @@ img {
 .css-dcb3d8{
 margin-left: 100px;
 }
+
+
+@media only screen and (max-width: 800px) {
+
+  .css-95g4uk{
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+.css-uwq6s2 {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+  .css-2jpnd6 {
+    min-width: 100% !important;
+    background: rgba(21, 149, 212, 0.5) !important;
+  }
+}

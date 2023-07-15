@@ -95,6 +95,15 @@ margin-left: 100px;
   box-shadow: 0 0 18px 0 #82919b !important;
 }
 
+.css-ez23ye {
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FFFFAC 1%, #8f7b55 1%, #FFFFAC 10%, #8A6E2F 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100% ) !important; 
+  font-size: 1.2rem !important;
+  font-weight: 800 !important;
+
+  
+}
+
 
 @media only screen and (max-width: 800px) {
 

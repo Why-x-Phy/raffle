@@ -25,7 +25,7 @@ const EntryCard: React.FC<Props> = ({ walletAddress }) => {
             {!numberOfEntriesLoading && (
                 <Flex flexDirection={"row"} alignItems={"center"} justifyContent={"space-between"}>
                     <Text border={"1px solid"} borderRadius={"6px"} p={2} mr={2}>{truncateAddress(walletAddress)}</Text>
-                    <Text>Entries: {numberOfEntries.toNumber()}</Text>
+                    <Text>Your Ticket(s): {numberOfEntries.toNumber()}</Text>
                 </Flex>
             )}
         </Card>

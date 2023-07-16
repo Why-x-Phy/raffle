@@ -9,6 +9,8 @@ import { useState } from "react";
 import CurrentEntries from "../components/CurrentEntries";
 import { Web3ReactProvider } from "@web3-react/core";
 
+
+
 const Home: NextPage = () => {
   const address = useAddress();
 
@@ -45,6 +47,7 @@ const Home: NextPage = () => {
   }
 
   return (
+    
     <Container maxW={"1440px"}>
       <SimpleGrid columns={2} spacing={4} minH={"60vh"}>
         <Flex justifyContent={"center"} alignItems={"center"}>
@@ -57,6 +60,7 @@ const Home: NextPage = () => {
               height="100%"
             />
           )}
+          
         </Flex>
         <Flex justifyContent={"center"} alignItems={"center"} p={"5%"}>
           <Stack spacing={10}>
@@ -64,7 +68,9 @@ const Home: NextPage = () => {
               <Text fontSize={"xl"}></Text>
               <Text fontSize={"4xl"} fontWeight={"bold"}>Buy a ticket to win the NFT Prize!</Text>
             </Box>
+            
             <Text fontSize={"xl"}>Buy entries for a chance to win the NFT! Winner will be selected and transferred the NFT. The more entries the higher chance you have of winning the prize.</Text>
+            
             <LotteryStatus status={lotteryStatus}/>
             {!ticketCostLoading && (
               <Text fontSize={"2xl"} fontWeight={"bold"}>Cost Per Ticket: {ticketCostInEther} MATIC</Text>
@@ -72,7 +78,9 @@ const Home: NextPage = () => {
             {address ? (
               <Flex flexDirection={"row"}>
                 <Flex flexDirection={"row"} w={"25%"} mr={"40px"}>
-                  <Button onClick={decreaseTicketAmount}>-</Button>
+                  <Button
+                    onClick={decreaseTicketAmount}
+                  >-</Button>
                   <Input
                     value={ticketAmount}
                     type={"number"}
@@ -80,8 +88,11 @@ const Home: NextPage = () => {
                     textAlign={"center"}
                     mx={2}
                   />
-                  <Button onClick={increaseTicketAmount}>+</Button>
+                  <Button
+                    onClick={increaseTicketAmount}
+                  >+</Button>
                 </Flex>
+                
                 <Web3Button
                   contractAddress={LOTTERY_CONTRACT_ADDRESS}
                   action={(contract) => contract.call(
@@ -94,24 +105,23 @@ const Home: NextPage = () => {
                     }
                   )}
                   isDisabled={!lotteryStatus}
-                >
-                  {`Buy Ticket(s)`}
-                </Web3Button>
+                >{`Buy Ticket(s)`}</Web3Button>
               </Flex>
             ) : (
               <Text>Connect wallet to buy ticket.</Text>
             )}
             {!totalEntriesLoading && (
-              <>
-                <Text>Total Entries: {totalEntries.toString()}</Text>
-                <Text fontSize={"xl"}></Text>
-                {address && <CurrentEntries walletAddress={address} />}
-              </>
+              <Text>Total Entries: {totalEntries.toString()}</Text>
             )}
           </Stack>
         </Flex>
-      </SimpleGrid>
+        </SimpleGrid>
+      <Stack mt={"40px"} textAlign={"center"}>
+        <Text fontSize={"xl"}>Current Raffle Participants:</Text>
+        <CurrentEntries/>
+      </Stack>
     </Container>
+   
   );
 };
 

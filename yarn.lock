@@ -1091,7 +1091,7 @@
     "@ethersproject/logger" "^5.7.0"
     "@ethersproject/properties" "^5.7.0"
 
-"@ethersproject/address@^5.7.0", "@ethersproject/address@5.7.0":
+"@ethersproject/address@^5", "@ethersproject/address@^5.7.0", "@ethersproject/address@5.7.0":
   "integrity" "sha512-9wYhYt7aghVGo758POM5nqcOMaE168Q6aRLJZwUmiqSrAungkG74gSSeKEIR7ukixesdRZGPgVqme6vmxs1fkA=="
   "resolved" "https://registry.npmjs.org/@ethersproject/address/-/address-5.7.0.tgz"
   "version" "5.7.0"
@@ -1243,7 +1243,7 @@
   dependencies:
     "@ethersproject/logger" "^5.7.0"
 
-"@ethersproject/providers@^5.7.0", "@ethersproject/providers@^5.7.2", "@ethersproject/providers@5.7.2":
+"@ethersproject/providers@^5", "@ethersproject/providers@^5.7.0", "@ethersproject/providers@^5.7.2", "@ethersproject/providers@5.7.2":
   "integrity" "sha512-g34EWZ1WWAVgr4aptGlVBF8mhl3VWjv+8hoAnzStu8Ah22VHBsuGzP17eb6xDVRzw895G4W7vvx60lFFur/1Rg=="
   "resolved" "https://registry.npmjs.org/@ethersproject/providers/-/providers-5.7.2.tgz"
   "version" "5.7.2"
@@ -3167,6 +3167,33 @@
   dependencies:
     "@walletconnect/window-getters" "^1.0.1"
     "tslib" "1.14.1"
+
+"@web3-react/core@^8.2.0":
+  "integrity" "sha512-r7dmK2E8Jrpvm/DF93hGMB+8lECHSI3Oo0NrHbhxkisK6in6rdgAXeYFhZtM48LBAm9py6fQvLzjCM6Qx9q0oQ=="
+  "resolved" "https://registry.npmjs.org/@web3-react/core/-/core-8.2.0.tgz"
+  "version" "8.2.0"
+  dependencies:
+    "@web3-react/store" "^8.2.0"
+    "@web3-react/types" "^8.2.0"
+    "zustand" "^4.3.5"
+  optionalDependencies:
+    "@ethersproject/providers" "^5"
+
+"@web3-react/store@^8.2.0":
+  "integrity" "sha512-cG8nb+tBeRUJu+98ko6YZuAWmoipGMEbR3bhineCNd4x2mXv3GbWSPtE17GeWVshZgDbZu2/Du0okTx+22VWCg=="
+  "resolved" "https://registry.npmjs.org/@web3-react/store/-/store-8.2.0.tgz"
+  "version" "8.2.0"
+  dependencies:
+    "@ethersproject/address" "^5"
+    "@web3-react/types" "^8.2.0"
+    "zustand" "^4.3.5"
+
+"@web3-react/types@^8.2.0":
+  "integrity" "sha512-TBYTFlqJZaEpVbuAAKRJFX5PZc3lI1TqDZzY94zwCrCh4GBepwwK7+PxmRAppMFuNa5x0vFX/ghLEC44e6TCFg=="
+  "resolved" "https://registry.npmjs.org/@web3-react/types/-/types-8.2.0.tgz"
+  "version" "8.2.0"
+  dependencies:
+    "zustand" "^4.3.5"
 
 "@web3modal/core@2.4.3":
   "integrity" "sha512-7Z/sDe9RIYQ2k9ITcxgEa/u7FvlI76vcVVZn9UY4ISivefqrH4JAS3GX4JmVNUUlovwuiZdyqBv4llAQOMK6Rg=="
@@ -6627,3 +6654,10 @@
   "integrity" "sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw=="
   "resolved" "https://registry.npmjs.org/zod/-/zod-3.21.4.tgz"
   "version" "3.21.4"
+
+"zustand@^4.3.5":
+  "integrity" "sha512-Tat5r8jOMG1Vcsj8uldMyqYKC5IZvQif8zetmLHs9WoZlntTHmIoNM8TpLRY31ExncuUvUOXehd0kvahkuHjDw=="
+  "resolved" "https://registry.npmjs.org/zustand/-/zustand-4.3.9.tgz"
+  "version" "4.3.9"
+  dependencies:
+    "use-sync-external-store" "1.2.0"

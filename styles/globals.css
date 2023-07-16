@@ -104,6 +104,18 @@ margin-left: 100px;
   
 }
 
+.css-nq97qu {
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FFFFAC 5%, #c7b593 5%, #FFFFAC 5%, #8A6E2F 45%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%) !important;
+  box-shadow: 0 0 18px 0 #82919b !important;
+  border-radius: 16px !important;
+}
+
+.css-0 {
+  font-size: 1.2rem !important;
+  border: #000608 !important;
+}
+
 
 @media only screen and (max-width: 800px) {
 
